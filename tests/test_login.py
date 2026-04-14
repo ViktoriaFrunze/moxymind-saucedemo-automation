@@ -1,7 +1,7 @@
 import pytest
 
 def test_login_success(login_page, page):
-    """Проверка успешной авторизации"""
+    """Checking for successful authorization"""
     login_page.navigate()
     login_page.login("standard_user", "secret_sauce")
 
