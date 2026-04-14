@@ -1,22 +1,29 @@
-# SauceDemo Automation Project (Playwright + Python)
+# SauceDemo & ReqRes Automation Project (Playwright + Python)
 
-This is a professional test automation project for the [SauceDemo](https://www.saucedemo.com/) e-commerce website.
+This repository contains a comprehensive test automation suite covering both Frontend (UI) and Backend (API) testing.
 
 ## 🛠 Tech Stack
 * **Language**: Python 3.12
-* **Framework**: Pytest
-* **Automation Tool**: Playwright
+* **UI Framework**: Playwright (Pytest-playwright)
+* **API Client**: Requests
+* **Test Runner**: Pytest
 * **Design Pattern**: Page Object Model (POM)
 
 ## 📋 Test Scenarios
-1. **Successful Login**: Authorization using `standard_user`. *Critical for verifying system access.*
-2. **Locked Out User**: Validation of error messages when logging in as `locked_out_user`. *Testing negative scenarios and error handling.*
-3. **Add to Cart**: Adding an item to the shopping cart and verifying the cart badge counter. *Core business logic of product selection.*
-4. **End-to-End Checkout (E2E)**: A complete user journey from login to the "THANK YOU FOR YOUR ORDER" screen. *Verifying the critical path of the purchase process.*
 
-## 🚀 How to Run the Project Locally
+### Frontend (SauceDemo)
+1. **Successful Login**: Authorization using `standard_user`.
+2. **Locked Out User**: Validation of error messages for `locked_out_user`.
+3. **Add to Cart**: Verifying the shopping cart badge after adding items.
+4. **End-to-End Checkout (E2E)**: Complete flow from login to order confirmation.
+
+### Backend (ReqRes API)
+5. **GET List Users**: Validation of user data (specifically "Lawson" and "Ferguson") and total count verification.
+6. **POST Create User**: Data-driven tests for user creation with different payloads.
+
+## 🚀 Installation & Setup
 
 1. **Clone the repository:**
    ```bash
-   git clone <your_repository_link>
+   git clone [https://github.com/ViktoriaFrunze/moxymind-saucedemo-automation.git](https://github.com/ViktoriaFrunze/moxymind-saucedemo-automation.git)
    cd moxymind_automation
