@@ -11,7 +11,6 @@ BASE_URL = "https://reqres.in/api"
 
 
 def check_response(response, expected_status):
-    # Если сервер капризничает, мы не валим тест, а мягко объясняем причину
     if response.status_code in [401, 403, 429]:
         pytest.skip(f"Server returned {response.status_code}. Anti-bot protection is active.")
     assert response.status_code == expected_status
